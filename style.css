@@ -1,0 +1,39 @@
+@media print {
+    body {
+        color: black;
+        background: none;
+    }
+
+    .no-print {
+        display: none;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    
+    page-break-after: avoid;
+}
+h1, h2, li {
+    color: red
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    page-break-inside: avoid;
+}
+
+p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+@page {
+    margin: 1cm;
+}
+
+body {
+    font-size: 12pt;
+}
